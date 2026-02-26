@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+  <img src="profile.jpg" alt="My Profile Image" class="profile-img">
+
+    <h2>Germaevin-Dev</h2>
+    <p class="title">Web Developer</p>
+
+    <p class="bio">
+     I’m a software engineer and web developer who builds responsive, high-performance websites and scalable backend systems for businesses across different industries. I focus on turning ideas into clean, secure, and practical digital solutions that actually work.
+I’m also a forex trader with a strong understanding of market analysis and risk management, which strengthens my discipline, decision-making, and problem-solving approach. I value clarity, efficiency, and results in everything i do.
+    </p>
+
+    <section>
+        <div class="info">
+        <p>Bamenda,Cameroon</p>
+    </section>
+
+    <section>
+        <p>ndzegermaevin@gmail.com </p>
+    </section>
+
+    <div class="socials">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Tiktok</a>
+    </div>
+
+    <p>Current UTC Time:<span id="utc-time"></span></p>
+
+  </div>
+
+  <script>
+    function updateUTCTime(){
+        const now=new Date();
+        const utcString=now.toUTCString();
+        document.getElementById("utc-time").textContent=utcString
+    }
+
+    updateUTCTime();
+    setInterval(updateUTCTime, 1000);//updates every second
+  </script>
+</body>
+</html>

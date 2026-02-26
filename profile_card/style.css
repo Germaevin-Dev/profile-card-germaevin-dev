@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+}
+
+.card {
+  width: 480px; /*icrease from maybe 320px*/
+  background: #faf6f6;
+  padding: 90px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(21, 20, 20, 0.1);
+  text-align: center;
+  transition: 0.3s ease;
+}
+.card h2{
+    color: #0077ff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 3px solid #1408f1; /* optional */
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1); /* optional */
+}
+
+.title {
+  color: #09f34f;
+  margin: 5px 0 10px;
+}
+
+.bio {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #010108;
+}
+
+.info{
+    margin: 20px;
+    font-size: 15px;
+    color: black;
+}
+
+.info p{
+    margin: 6px 0;
+}
+
+.socials a {
+  display: inline-block;
+  margin: 5px 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.socials a:hover {
+  color: #0077ff;
+}
+
+#utc-time{
+    color: #09f34f;/*brighter lime green*/
+    font-weight: 600;
+}
